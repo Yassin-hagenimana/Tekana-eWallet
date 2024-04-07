@@ -20,7 +20,12 @@ public class Customer {
     @Column(name = "id", nullable = false)
     private UUID id;
 
+    @Column(name = "names", nullable = false)
     private String names;
+    @Column(name = "email", nullable = false)
     private String email;
+
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
 }
