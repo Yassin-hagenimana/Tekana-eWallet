@@ -3,7 +3,6 @@ package com.example.tekanaewallet.services;
 import com.example.tekanaewallet.models.Customer;
 import com.example.tekanaewallet.models.dtos.CreateCustomerDTO;
 import com.example.tekanaewallet.models.dtos.UpdateCustomerDTO;
-import com.example.tekanaewallet.models.dtos.UpdateTransactionsDTO;
 
 import java.util.List;
 import java.util.UUID;

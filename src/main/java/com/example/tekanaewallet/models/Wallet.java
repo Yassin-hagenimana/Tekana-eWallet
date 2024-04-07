@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
@@ -23,7 +22,7 @@ public class Wallet extends TimeStampAudit {
     private UUID id;
 
     @Column(name="balance")
-    private BigDecimal balance;
+    private int balance;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "customer_id", referencedColumnName = "id", nullable = false)

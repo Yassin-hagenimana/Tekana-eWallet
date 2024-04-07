@@ -13,5 +13,5 @@ import java.util.UUID;
 @Getter
 public class UpdateWalletDTO {
     private UUID customerId;
-    private String balance;
+    private int balance;
 }

@@ -27,5 +27,5 @@ public class Transactions extends TimeStampAudit {
     @JoinColumn(name = "wallet_id", referencedColumnName = "id", nullable = false)
     private Wallet wallet;
 
-    private BigDecimal amount;
+    private int amount;
 }
