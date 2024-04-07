@@ -6,6 +6,7 @@ import com.example.tekanaewallet.models.dtos.CreateTransactionDTO;
 import com.example.tekanaewallet.repositories.CustomerTransactionsRepository;
 import com.example.tekanaewallet.repositories.WalletsRepository;
 import com.example.tekanaewallet.services.TransactionsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,6 +19,7 @@ public class TransactionsServiceImpl implements TransactionsService {
 
     private final CustomerTransactionsRepository transactionsRepository;
 
+    @Autowired
     public TransactionsServiceImpl(WalletsRepository walletsRepository, CustomerTransactionsRepository transactionsRepository) {
         this.walletsRepository = walletsRepository;
         this.transactionsRepository = transactionsRepository;

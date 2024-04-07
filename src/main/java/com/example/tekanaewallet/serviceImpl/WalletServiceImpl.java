@@ -7,6 +7,7 @@ import com.example.tekanaewallet.models.dtos.CreateWalletDTO;
 import com.example.tekanaewallet.repositories.CustomersRepository;
 import com.example.tekanaewallet.repositories.WalletsRepository;
 import com.example.tekanaewallet.services.WalletService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,9 +17,11 @@ import java.util.UUID;
 @Service
 public class WalletServiceImpl implements WalletService {
 
+
     private final WalletsRepository walletsRepository;
     private final CustomersRepository customersRepository;
 
+    @Autowired
     public WalletServiceImpl(WalletsRepository walletsRepository, CustomersRepository customersRepository) {
         this.walletsRepository = walletsRepository;
         this.customersRepository = customersRepository;
@@ -26,7 +29,7 @@ public class WalletServiceImpl implements WalletService {
 
     @Override
     public List<Wallet> findByCustomerId(UUID customerId) {
-        return walletsRepository.findByCustomerId(customerId);
+        return walletsRepository.findAllByCustomerId(customerId);
     }
 
     @Override

@@ -4,6 +4,7 @@ package com.example.tekanaewallet.controllers;
 import com.example.tekanaewallet.models.Wallet;
 import com.example.tekanaewallet.models.dtos.CreateWalletDTO;
 import com.example.tekanaewallet.services.WalletService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +18,7 @@ public class WalletsController {
 
     private final WalletService walletService;
 
+    @Autowired
     public WalletsController(WalletService walletService) {
         this.walletService = walletService;
     }

@@ -6,6 +6,7 @@ import com.example.tekanaewallet.models.dtos.CreateCustomerDTO;
 import com.example.tekanaewallet.models.dtos.UpdateCustomerDTO;
 import com.example.tekanaewallet.repositories.CustomersRepository;
 import com.example.tekanaewallet.services.CustomersService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class CustomerServiceImpl implements CustomersService {
 
     private final CustomersRepository customersRepository;
 
+    @Autowired
     public CustomerServiceImpl(CustomersRepository customersRepository) {
         this.customersRepository = customersRepository;
     }

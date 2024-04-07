@@ -4,6 +4,7 @@ import com.example.tekanaewallet.models.Customer;
 import com.example.tekanaewallet.models.dtos.CreateCustomerDTO;
 import com.example.tekanaewallet.models.dtos.UpdateCustomerDTO;
 import com.example.tekanaewallet.services.CustomersService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,8 +15,10 @@ import java.util.UUID;
 @RequestMapping("/api/v1/customers")
 @Validated
 public class CustomersController {
-private final CustomersService customersService;
 
+   private final CustomersService customersService;
+
+   @Autowired
     public CustomersController(CustomersService customersService) {
         this.customersService = customersService;
     }

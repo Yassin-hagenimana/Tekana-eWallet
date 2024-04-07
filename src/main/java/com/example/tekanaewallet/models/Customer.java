@@ -1,12 +1,12 @@
 package com.example.tekanaewallet.models;
 
 import com.example.tekanaewallet.audits.TimeStampAudit;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
@@ -17,7 +17,7 @@ import java.util.UUID;
 @Setter
 public class Customer extends TimeStampAudit{
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue()
     @Column(name = "id", nullable = false)
     private UUID id;
 
