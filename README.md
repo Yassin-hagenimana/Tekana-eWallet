@@ -19,6 +19,7 @@ Ensure alignment with business goals and customer needs.
 Evaluate modern back-end technologies for scalability, performance, and maintainability.
 Choose Spring Boot as the back-end framework for its robustness, scalability, and extensive ecosystem.
 Select appropriate database technology (e.g., PostgreSQL) for high performance and scalability.
+
 4. Team Formation and Collaboration:
 
 Assemble a cross-functional team including back-end engineers, front-end developers, UI/UX designers, product owner, Scrum Master, and business experts.
