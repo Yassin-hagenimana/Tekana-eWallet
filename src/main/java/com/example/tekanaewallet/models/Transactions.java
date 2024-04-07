@@ -7,33 +7,25 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
-@Table(name = "customers")
+@Table(name = "transactions")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Customer extends TimeStampAudit{
+public class Transactions extends TimeStampAudit {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "id", nullable = false)
     private UUID id;
 
-    @Column(name = "names", nullable = false)
-    private String names;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "wallet_id", referencedColumnName = "id", nullable = false)
+    private Wallet wallet;
 
-    @Column(name = "email", nullable = false)
-    private String email;
-
-    @Column(name = "phone_number")
-    private String phoneNumber;
-
-    @Column(name = "country")
-    private String country;
-
-    @Column(name = "national_id")
-    private String nationalId;
-
+    private BigDecimal amount;
 }
