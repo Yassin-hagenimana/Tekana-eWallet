@@ -55,11 +55,11 @@ public class SwaggerConfig {
 
     private ApiInfo appInfo() {
         return new ApiInfo(
-                "ICP apis documentation",
-                "Official documentation of Tech news website written in Spring boot and Mysql",
+                "Tekana E-Wallet apis documentation",
+                "Official documentation of Tekana E-Wallet written in Spring boot and postgres",
                 "1.0.0",
-                "https://github.com/Yassin-hagenimana/HelloResto.git",
-                new Contact("Tech news website", "news-tech.vercel.rw", "hyassin509@gmail.rw"),
+                "https://github.com/Yassin-hagenimana/Tekana-eWallet.git",
+                new Contact("Tekana E-Wallet", "", "hyassin509@gmail.rw"),
                 "MIT",
                 "https://github.com/veritem/springboot-template/blob/main/LICENSE",
                 Collections.emptyList()

@@ -51,3 +51,5 @@ Tekana-eWallet Back-end Revamp Strategy
     Continuously iterate and improve the system based on user feedback and changing requirements.
     Plan for future enhancements and scalability to accommodate growing customer base and evolving business needs.
     This strategy outlines the step-by-step approach for revamping the Tekana-eWallet back-end system, ensuring a comprehensive and successful project execution.
+
+ ** To access swagger ui locally, use the following link: http://localhost:8006/swagger-ui/index.html
